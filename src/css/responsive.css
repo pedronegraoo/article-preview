@@ -1,0 +1,74 @@
+@media screen and (max-width: 900px) {
+  .box {
+    flex-direction: column;
+    width: 500px;
+  }
+
+  .div-imagem,
+  .content {
+    width: 100%;
+    border-top-right-radius: 1rem;
+  }
+
+  .info {
+    justify-content: space-around;
+  }
+
+  .info-content {
+    position: relative;
+  }
+
+  #button.active {
+    background-color: hsl(210, 46%, 95%);
+  }
+
+  .share {
+    display: block;
+    z-index: 1;
+  }
+
+  .share-btns {
+    scale: 1;
+    transform: scaleX(0);
+    transform: scaleY(0);
+
+    width: 500px;
+    height: 5rem;
+    inset: -15px -367px;
+
+    justify-content: flex-start;
+    padding: 0px 25px;
+
+    z-index: -1;
+  }
+
+  .share-btns.active {
+    transform: scaleY(100%);
+  }
+
+  .share-btns::after {
+    position: unset;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .box {
+    width: 350px;
+  }
+
+  .share-btns {
+    scale: 1;
+    transform: scaleX(0);
+    transform: scaleY(0);
+
+    z-index: -1;
+
+    width: 350px;
+    height: 5rem;
+    inset: -20px -255px;
+  }
+
+  .share-btns.active {
+    transform: scaleY(100%);
+  }
+}
